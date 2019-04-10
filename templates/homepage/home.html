@@ -1,5 +1,7 @@
 {% extends "/base/base.html" %}
+{% from 'bootstrap/form.html' import render_field %}
 {% block title %} League Of Logs{% endblock %}
+
 
 
 {% block content %}
@@ -13,7 +15,7 @@
     </div>
     <div class="col-md-2 d-none d-md-block">
 
-        <img class="img-fluid" src="http://stelar7.no/cdragon/latest/banners/profile/Demacia-1.png" alt="">
+        <img class="img-fluid" src="{{banner}}" alt="">
 
 
     </div>
@@ -25,14 +27,18 @@
       {% block navbar %}
       {% endblock %}
       <div class="jumbotron bg-dark">
-
+        <form method="post">
+          {{ form.csrf_token() }}
+          {{ render_field(form.search) }}
+          {{ render_field(form.submit) }}
+        </form>
         <img class="img" src="" alt="">
 
       </div>
     </div>
     <div class="col-md-2 d-none d-md-block">
 
-        <img class="img-fluid" src="http://stelar7.no/cdragon/latest/banners/profile/Demacia-1.png" alt="">
+        <img class="img-fluid" src="{{banner}}" alt="">
 
 
     </div>
