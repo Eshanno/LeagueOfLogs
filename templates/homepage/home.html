@@ -1,35 +1,38 @@
 {% extends "/base/base.html" %}
 {% block title %} League Of Logs{% endblock %}
-{% include "navbars/navbar.html" %}
 
-
-
-{% block navbar %}
-{% endblock %}
 
 {% block content %}
 <div class="container-fluid" >
+
   <div class="row">
-    <div class="col-md-1">
+    <div class="col-md-1 ">
 
 
 
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 d-none d-md-block">
 
-        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" alt="">
+        <img class="img-fluid" src="http://stelar7.no/cdragon/latest/banners/profile/Demacia-1.png" alt="">
 
 
     </div>
-    <div class="col-md-6 pt-5">
-      <div class="jumbotron bg-primary">
+    <div class="col-md-6  col-sm-12 ">
+      {% include "navbars/navbar.html" %}
 
+
+
+      {% block navbar %}
+      {% endblock %}
+      <div class="jumbotron bg-dark">
+
+        <img class="img" src="" alt="">
 
       </div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 d-none d-md-block">
 
-        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_3.jpg" alt="">
+        <img class="img-fluid" src="http://stelar7.no/cdragon/latest/banners/profile/Demacia-1.png" alt="">
 
 
     </div>
