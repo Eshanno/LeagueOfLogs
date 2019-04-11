@@ -161,8 +161,8 @@ $sizes: map-merge(
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-bg:                   $dark !default;
+$body-color:                $light !default;
 
 
 // Links
@@ -812,7 +812,7 @@ $pagination-disabled-border-color:  $gray-300 !default;
 
 $jumbotron-padding:                 2rem !default;
 $jumbotron-color:                   null !default;
-$jumbotron-bg:                      $gray-200 !default;
+$jumbotron-bg:                      $dark !default;
 
 
 // Cards

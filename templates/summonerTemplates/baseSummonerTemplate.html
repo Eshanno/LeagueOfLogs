@@ -23,9 +23,10 @@
       {% block navbar %}
       {% endblock %}
       <div class="jumbotron bg-dark">
-        welcome {{summonerName}}{{summoner}}
+        <h2>{{summonerName}} <small> Level:{{summoner['summonerLevel']}}</small></h2>
+        <h4></h4>
         <img class="img-thumbnail" src='{{profileImg}}''>
-
+        {{summoner}}
 
       </div>
     </div>

@@ -38,3 +38,7 @@ def chooseHomePageBanner():
 def getSrcPlayerIconPngByNum(imgNumber):
     querry='http://ddragon.leagueoflegends.com/cdn/{}/img/profileicon/{}.png'.format(VERSION,imgNumber)
     return querry
+
+def getMatchHistory(accountId,champion,queue,season,beginIndex,EndIndex):
+    pass
+    #https://na1.api.riotgames.com/lol/match/v4/matchlists/by-account/DztRYObnvykP-hOtL2gWTBlSswKyn_T6UhvSFvkSTfnVWA?endIndex=10&beginIndex=0&api_key=RGAPI-0734cd2f-b903-4fba-98cc-1532a8774c27

@@ -27,7 +27,7 @@
       {% block navbar %}
       {% endblock %}
       <div class="jumbotron bg-dark">
-        <form method="post">
+        <form method="post" style="text-align: center;">
           {{ form.csrf_token() }}
           {{ render_field(form.search) }}
           {{ render_field(form.submit) }}
