@@ -23,10 +23,27 @@
       {% block navbar %}
       {% endblock %}
       <div class="jumbotron bg-dark">
-        <h2>{{summonerName}} <small> Level:{{summoner['summonerLevel']}}</small></h2>
-        <h4></h4>
-        <img class="img-thumbnail" src='{{profileImg}}''>
-        {{summoner}}
+        <div class="row">
+          <h2>{{summonerName}} <small> Level:{{summoner['summonerLevel']}}</small></h2>
+          <h4></h4>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img class="img-thumbnail" src='{{profileImg}}'>
+          </div>
+          <div class="col-md-8">
+            {{summoner}}
+            {% for match in matches %}
+            <div class="container border pl-0">
+              <img class="img" src="{{match}}" alt="">
+              
+            </div>
+
+            {% endfor %}
+          </div>
+        </div>
+
+
 
       </div>
     </div>
